@@ -186,6 +186,7 @@ abstract class UserState {
                 syncValues = new JSONObject(syncValuesStr);
         } catch (JSONException e) {
             e.printStackTrace();
+            syncValues = new JSONObject();
         }
     }
 
